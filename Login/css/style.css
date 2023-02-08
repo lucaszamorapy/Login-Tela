@@ -1,0 +1,119 @@
+/* geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color:  #4c1d7d;
+    border: none;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-size: cover;  /* centralizar a imagem */
+}
+
+textarea:focus, input:focus {
+    outline: none               /* tirar o azul dos inputs */
+}
+
+a {
+    font-size: .8rem;           /* tamanho das fonte do href */
+}
+
+a:hover {
+    color:  #670cbb;           /* quando passar o mouse no href, muda de cor*/
+}
+
+/* container login */
+
+#login-container {
+    background-color: #FFF;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;                   /*usar 10% da tela de cima do usuário*/
+    border-radius: 10px;
+    text-align: center;                 /*alinhar ao centro o container do formulario*/
+}
+
+/* formulário */
+form {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display: block;             /* colocar os labels e os inputs todos um embaixo do outros*/
+    width: 100%;
+    text-align: left;           /* alinhar para esquerda*/
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid  #4c1d7d;    /* colocar borda apenas embaixo dos inputs */
+    padding: 10px;                          /* espaçamento dos inputs com as labels*/
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-bottom: 2px solid #670cbb;    /* quando clicar com o mouse no input ele muda de cor*/
+}
+
+#forgot-pass {
+    display: block;                         /* colocar o href embaixo dos inputs */
+}
+
+input[type="submit"] {                      /* chamando o input do entrar*/
+    text-align: center;                         
+    text-transform: uppercase;              /* colocando o texto em capslock*/
+    font-weight: bold;                      /* fonte em negrito*/
+    border: none;                           /* tirar a borda*/
+    height: 40px;                           /*altura*/
+    border-radius: 20px;                    /* arredondando as bordas*/
+    margin-top: 30px;                       /*colocando espaçamento em cima*/
+    color: #FFF;
+    background-color:#4c1d7d;
+    cursor: pointer;                        /* ponteiro do mouse mudar, como se fosse um botao */
+}
+
+input[type="submit"]:hover {                /* quando passar o mouse no input ele mudar de cor */
+    background-color: #670cbb;
+    transition: .5s;                        /* o tempo da transicao da cor que irá mudar */
+}
+
+/* redes socias */
+
+#social-container, #social-container p {
+    margin-bottom: 20px;                        /* espaçamento do p embaixo */ 
+}
+
+#social-container i {                           /* chamando os icones */
+    height: 40px;                               /* altura */
+    width: 40px;                                /*largura */
+    border-radius: 50%;                         /* deixar em circulo */
+    line-height: 40px;                          /* usado para centralizar o icone com o circulo*/
+    color: #FFF;
+    margin: 0 5px;                              /* colocando margem para dar espaçamento entre eles*/
+    cursor: pointer;                            /* ponteiro do mouse mudar, como se fosse um botao */
+}
+
+.fa-google {
+    background-color: #ea4335;
+}
+.fa-linkedin {
+    background-color: #0077b5;
+}
+
+/* registrar */
+
+#register-container p {
+    margin-bottom: 10px;            /*espaçamento do p com o href "registra-se" */
+}
